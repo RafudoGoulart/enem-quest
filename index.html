@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENEM Quest</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ==========================================
+                        SIDEBAR
+        =========================================== -->
+
+        <aside class="sidebar">
+
+            <div>
+
+                <h2 class="logo">
+                    🎓 ENEM Quest
+                </h2>
+
+                <nav class="menu">
+
+                    <a href="#" class="ativo">
+                        🏠 Início
+                    </a>
+
+                    <a href="#">
+                        📚 Matérias
+                    </a>
+
+                    <a href="#">
+                        📝 Simulados
+                    </a>
+
+                    <a href="#">
+                        📈 Progresso
+                    </a>
+
+                    <a href="#">
+                        ⚙️ Configurações
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <div class="perfil">
+                👤 Rafael
+            </div>
+
+        </aside>
+
+        <!-- ==========================================
+                        CONTEÚDO
+        =========================================== -->
+
+        <main class="conteudo">
+
+            <!-- ==========================================
+                            HEADER
+            =========================================== -->
+
+            <header class="header">
+
+                <h1>ENEM Quest</h1>
+
+                <div>
+                    Rafael 👤
+                </div>
+
+            </header>
+
+            <!-- ==========================================
+                        DASHBOARD PRINCIPAL
+            =========================================== -->
+
+            <section class="card">
+
+                <div class="card-info">
+
+                    <h2 id="saudacao"></h2>
+
+                    <p class="nivel" id="nivelUsuario"></p>
+
+                    <p class="frase" id="fraseDia">
+                        Carregando frase...
+                    </p>
+
+                    <!-- PROGRESSO -->
+
+                    <div class="progresso-geral">
+
+                        <div class="titulo-progresso">
+
+                            <span>📈 Progresso rumo ao ENEM</span>
+
+                            <strong id="porcentagem">
+                                42%
+                            </strong>
+
+                        </div>
+
+                        <div class="barra-geral">
+
+                            <div class="barra-preenchida"
+                                 id="barraProgresso">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- XP -->
+
+                    <div class="xp">
+
+                        <div class="xp-box">
+
+                            <span>⭐ XP</span>
+
+                            <strong id="xpTexto"></strong>
+
+                        </div>
+
+                        <div class="xp-barra">
+
+                            <div class="xp-preenchimento"
+                                 id="xpBarra">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- BOTÃO -->
+
+                <div class="card-acoes">
+
+                    <button class="btn-principal">
+
+                        🚀 Continuar estudando
+
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- ==========================================
+                    CARDS DE ESTATÍSTICAS
+            =========================================== -->
+
+            <section class="metas">
+
+                                <div class="meta">
+
+                    <span>🔥</span>
+
+                    <h3>8 dias</h3>
+
+                    <p>Sequência</p>
+
+                </div>
+
+                <div class="meta">
+
+                    <span>🎯</span>
+
+                    <h3>3/5</h3>
+
+                    <p>Meta Hoje</p>
+
+                </div>
+
+                <div class="meta">
+
+                    <span>📅</span>
+
+                    <h3>Domingo</h3>
+
+                    <p>Simulado</p>
+
+                </div>
+
+                <div class="meta">
+
+                    <span>⭐</span>
+
+                    <h3>1.250 XP</h3>
+
+                    <p>Nível 4</p>
+
+                </div>
+
+                <div class="meta">
+
+                    <span>🎓</span>
+
+                    <h3 id="diasEnem"></h3>
+
+                    <p>Rumo à UTFPR 🚀</p>
+
+                </div>
+
+            </section>
+
+            <!-- ==========================================
+                            BOTÕES
+            =========================================== -->
+
+            <section class="botoes">
+
+                <a href="matematica.html">
+                <button class="btn-principal">
+                   ▶ Começar Estudos
+             </button>
+</a>
+
+                <button>
+                    📝 Simulado
+                </button>
+
+            </section>
+
+            <!-- ==========================================
+                        PAINEL DAS MATÉRIAS
+            =========================================== -->
+
+            <section class="painel">
+
+                <h2>
+                    📚 Suas Matérias
+                </h2>
+
+                <div class="materias">
+
+                    <!-- Ciências Humanas -->
+
+                    <a href="materia.html?materia=humanas" class="card-link">
+
+                     <div class="materia">
+                        <h3>🌎 Ciências Humanas</h3>
+
+                        <div class="linha">
+
+                            <div class="barra">
+                                <div class="prog h"></div>
+                            </div>
+
+                            <span>45%</span>
+
+                        </div>
+
+                        <p class="i">
+                            🔴 Iniciante
+                        </p>
+
+                        <button>
+                            Estudar
+                        </button>
+
+                    </div>
+
+                    <!-- Matemática -->
+
+                   <a href="materia.html?materia=matematica" class="card-link">
+
+                      <div class="materia">
+                       <h3>📐 Matemática</h3>
+
+                        <div class="linha">
+
+                            <div class="barra">
+                                <div class="prog m"></div>
+                            </div>
+
+                            <span>65%</span>
+
+                        </div>
+
+                        <p class="n">
+                            🟡 Intermediário
+                        </p>
+
+                        <button>
+                            Estudar
+                        </button>
+
+                    </div>
+
+                    <!-- Linguagens e Códigos -->
+
+                   <a href="materia.html?materia=linguagens" class="card-link">
+
+                       <div class="materia">
+                        <h3>📝 Linguagens e Códigos</h3>
+
+                        <div class="linha">
+
+                            <div class="barra">
+                                <div class="prog l"></div>
+                            </div>
+
+                            <span>80%</span>
+
+                        </div>
+
+                        <p class="a">
+                            🟢 Avançado
+                        </p>
+
+                        <button>
+                            Estudar
+                        </button>
+
+                    </div>
+
+                    <!-- Ciências da Natureza -->
+
+                    <a href="materia.html?materia=natureza" class="card-link">
+
+                       <div class="materia">
+                        <h3>🧪 Ciências da Natureza</h3>
+
+                        <div class="linha">
+
+                            <div class="barra">
+                                <div class="prog c"></div>
+                            </div>
+
+                            <span>30%</span>
+
+                        </div>
+
+                        <p class="i">
+                            🔴 Iniciante
+                        </p>
+
+                        <button>
+                            Estudar
+                        </button>
+
+                    </div>
+
+                    <!-- Redação -->
+
+                    <a href="materia.html?materia=redacao" class="card-link">
+
+                      <div class="materia">
+                        <h3>✍️ Redação</h3>
+
+                        <div class="linha">
+
+                            <div class="barra">
+                                <div class="prog r"></div>
+                            </div>
+
+                            <span>55%</span>
+
+                        </div>
+
+                        <p class="n">
+                            🟡 Intermediário
+                        </p>
+
+                        <button>
+                            Estudar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+
+    </div>
+
+    <!-- ==========================================
+                    SCRIPTS
+    =========================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
