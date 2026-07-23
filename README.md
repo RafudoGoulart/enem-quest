@@ -24,4 +24,4 @@ https://rafudogoulart.github.io/enem-quest/
 
 ---
 
-Feito com ❤️ por Rafael Goulart.
+Feito por Rafael Goulart.
